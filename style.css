@@ -1,0 +1,21 @@
+/* * {
+  outline: 1px black solid;
+}*/
+body{
+  height: 500px;
+  background-color: blue;
+}
+.pushBox{
+  height: 100px;
+}
+.declaration {
+  height: 100px
+}
+b, h1 {
+  color: aliceblue;
+}
+img {
+  border-radius: 5%;
+  height: 300px;
+  width: 300px;
+}
