@@ -1,15 +1,7 @@
 let player;
 let computer;
 
-function showResult() {
 
-  let result = document.querySelector("#result")
-
-}
-
-function compPlay() {
-
-}
 
 
 function play(player) {
