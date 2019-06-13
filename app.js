@@ -8,35 +8,36 @@ function showResult() {
 }
 
 function compPlay() {
-  let compChoice = Math.floor((Math.random() * 4) + 1)
-  if (compChoice = 1) {
-    computer = "ROCK";
-  } else if (compChoice = 2) {
-    computer = "PAPER"
-  } else if (compChoice = 3) {
-    computer = "SCISSORS"
-  }
+
 }
 
 
-
-function results(player, computer) {
-
-  if (player === computer) {
-    outcome = "DRAW";
-  } else if (player === "ROCK" && computer === "PAPER") {
-    outcome = "YOU LOSE";
-  } else if (player === "ROCK" && computer === "SCISSORS") {
-    outcome = "WINNER";
-  } else if (player === "PAPER" && computer === "ROCK") {
-    outcome = "WINNER";
-  } else if (player === "PAPER" && computer === "SCISSORS") {
-    outcome = "YOU LOSE";
-  } else if (player === "SCISSORS" && computer === "ROCK") {
-    outcome = "YOU LOSE"
-  } else if (player === "SCISSORS" && computer === "PAPER") {
-    outcome = "WINNER"
+function play(player) {
+  let compChoice = Math.floor((Math.random() * 4) + 1)
+  if (compChoice == 1) {
+    computer = "ROCK";
+  } else if (compChoice == 2) {
+    computer = "PAPER"
+  } else if (compChoice == 3) {
+    computer = "SCISSORS"
   }
+  let outcome = document.querySelector("#result")
+  if (player == computer) {
+    outcome.innerHTML = "DRAW";
+  } else if (player === "ROCK" && computer === "PAPER") {
+    outcome.innerHTML = "YOU LOSE";
+  } else if (player === "ROCK" && computer === "SCISSORS") {
+    outcome.innerHTML = "WINNER";
+  } else if (player === "PAPER" && computer === "ROCK") {
+    outcome.innerHTML = "WINNER";
+  } else if (player === "PAPER" && computer === "SCISSORS") {
+    outcome.innerHTML = "YOU LOSE";
+  } else if (player === "SCISSORS" && computer === "ROCK") {
+    outcome.innerHTML = "YOU LOSE"
+  } else if (player === "SCISSORS" && computer === "PAPER") {
+    outcome.innerHTML = "WINNER"
+  }
+
 }
 /*
 
@@ -57,4 +58,4 @@ function drawCat() {
   moodElem.innerHTML = moodObj.mood
   petCountElem.innerHTML = cat.petCount.toString()
   imageElem.src = moodObj.image
-}
+}*/
